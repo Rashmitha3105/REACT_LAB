@@ -1,0 +1,61 @@
+// App.jsx
+
+import Header from './Header';
+import Footer from './Footer';
+
+const App = () => {
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <Header title="React Props Demo" />
+
+      <main>
+        <h2>Welcome to the React Props Example</h2>
+        <p>
+          This demonstrates passing props from parent to child components.
+        </p>
+      </main>
+
+      <footer>
+        <Footer copyright="©2025 MyReactApp. All rights reserved." />
+      </footer>
+    </div>
+  );
+};
+export default App;
+
+
+
+------Footer.js:------
+import PropTypes from 'prop-types';
+
+const Footer = ({ copyright }) => {
+  return (
+    <footer>
+      <p>{copyright}</p>
+    </footer>
+  );
+};
+
+Footer.propTypes = {
+  copyright: PropTypes.string.isRequired,
+};
+
+export default Footer;
+
+
+------Header.js:------
+import PropTypes from 'prop-types';
+
+const Header = ({ title }) => {
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
+};
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default Header;
