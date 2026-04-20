@@ -79,7 +79,7 @@ export default function App() {
 
 Index.css
 
-/* Reset some default styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -87,7 +87,7 @@ Index.css
   font-family: Arial, sans-serif;
 }
 
-/* App container */
+
 .app {
   max-width: 500px;
   margin: 40px auto;
@@ -97,14 +97,14 @@ Index.css
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Title */
+
 .app h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Form */
+
 form {
   display: flex;
   flex-direction: column;
@@ -123,7 +123,7 @@ form input:focus {
   border-color: #007bff;
 }
 
-/* Add button */
+
 form button {
   padding: 10px;
   border: none;
@@ -139,7 +139,7 @@ form button:hover {
   background: #0056b3;
 }
 
-/* Filter buttons */
+
 .filters {
   display: flex;
   justify-content: space-between;
@@ -161,7 +161,7 @@ form button:hover {
   background: #ccc;
 }
 
-/* Task list */
+
 ul {
   list-style: none;
   margin-top: 10px;
@@ -181,7 +181,7 @@ li:hover {
   background: #f1f1f1;
 }
 
-/* Completed task */
+
 li.done {
   text-decoration: line-through;
   color: gray;
