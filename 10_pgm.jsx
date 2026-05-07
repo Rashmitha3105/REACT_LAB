@@ -18,7 +18,7 @@ const DataFetcher = () => {
     } catch (e) {
       setErr(e.message);
     } finally {
-      setLoad(false); // ✅ fixed typo and better placement
+      setLoad(false); 
     }
   };
 
